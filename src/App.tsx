@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import CaseStudiesIndex from './pages/CaseStudiesIndex';
 import HaiwaTVCaseStudy from './pages/case-studies/HaiwaTV';
 import PlaceholderCaseStudy from './pages/case-studies/Placeholder';
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
 
           {/* Case Studies */}
+          <Route path="/case-studies" element={<CaseStudiesIndex />} />
           <Route path="/case-studies/haiwa-tv" element={<HaiwaTVCaseStudy />} />
           <Route path="/case-studies/physiotherapy" element={<PlaceholderCaseStudy title="Physiotherapy Clinics" />} />
           <Route path="/case-studies/blue-metal" element={<PlaceholderCaseStudy title="Blue Metal Suppliers" />} />
