@@ -22,6 +22,13 @@ function App() {
           <Route path="/case-studies/physiotherapy" element={<PlaceholderCaseStudy title="Physiotherapy Clinics" />} />
           <Route path="/case-studies/blue-metal" element={<PlaceholderCaseStudy title="Blue Metal Suppliers" />} />
           <Route path="/case-studies/finance" element={<PlaceholderCaseStudy title="Finance" />} />
+          <Route path="/case-studies/real-estate" element={<PlaceholderCaseStudy title="Real Estate" />} />
+          <Route path="/case-studies/events-edtech" element={<PlaceholderCaseStudy title="Event Management & EdTech" />} />
+          <Route path="/case-studies/homemade-cakes" element={<PlaceholderCaseStudy title="Homemade Cakes" />} />
+          <Route path="/case-studies/language-training" element={<PlaceholderCaseStudy title="Language Training Institutes" />} />
+          <Route path="/case-studies/skill-academy" element={<PlaceholderCaseStudy title="Skill Training Academy" />} />
+          <Route path="/case-studies/jothidam" element={<PlaceholderCaseStudy title="Jothidam" />} />
+          <Route path="/case-studies/fabric-suppliers" element={<PlaceholderCaseStudy title="Fabric Suppliers" />} />
         </Routes>
       </Layout>
     </Router>

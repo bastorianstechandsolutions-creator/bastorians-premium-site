@@ -2,33 +2,7 @@ import { Link } from 'react-router-dom';
 import { ScrollReveal } from '../components/ScrollReveal';
 import { GlassCard } from '../components/GlassCard';
 import { BsArrowRight } from 'react-icons/bs';
-
-const niches = [
-  {
-    title: "Haiwa TV",
-    description: "600+ TVs sold with a single high-impact campaign.",
-    link: "/case-studies/haiwa-tv",
-    metrics: "80,000+ Reach"
-  },
-  {
-    title: "Physiotherapy Clinics",
-    description: "Consistent high-intent patient acquisition.",
-    link: "/case-studies/physiotherapy",
-    metrics: "40% Lower CPA"
-  },
-  {
-    title: "Blue Metal Suppliers",
-    description: "Scaling B2B lead generation with precision.",
-    link: "/case-studies/blue-metal",
-    metrics: "200% Lead Volume"
-  },
-  {
-    title: "Finance",
-    description: "High-ticket client acquisition at scale.",
-    link: "/case-studies/finance",
-    metrics: "5x ROAS"
-  }
-];
+import { niches } from '../data/niches';
 
 export default function Home() {
   return (
@@ -95,6 +69,18 @@ export default function Home() {
                 </Link>
               </ScrollReveal>
             ))}
+          </div>
+
+          <div className="flex justify-center mt-12 w-full">
+            <ScrollReveal delay={0.2}>
+              <Link
+                to="/case-studies"
+                className="inline-flex items-center justify-center space-x-2 px-8 py-4 border border-white/10 rounded-full hover:bg-white/5 hover:border-brand-blue transition-all text-white mx-auto font-medium"
+              >
+                <span>View All Case Studies</span>
+                <BsArrowRight />
+              </Link>
+            </ScrollReveal>
           </div>
         </div>
       </section>
