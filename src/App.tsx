@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
+import { ThemeProvider } from './components/ThemeProvider';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -9,9 +10,10 @@ import PlaceholderCaseStudy from './pages/case-studies/Placeholder';
 
 function App() {
   return (
-    <Router>
-      <Layout>
-        <Routes>
+    <ThemeProvider defaultTheme="dark" storageKey="bastorians-theme">
+      <Router>
+        <Layout>
+          <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
@@ -28,11 +30,12 @@ function App() {
           <Route path="/case-studies/homemade-cakes" element={<PlaceholderCaseStudy title="Homemade Cakes" />} />
           <Route path="/case-studies/language-training" element={<PlaceholderCaseStudy title="Language Training Institutes" />} />
           <Route path="/case-studies/skill-academy" element={<PlaceholderCaseStudy title="Skill Training Academy" />} />
-          <Route path="/case-studies/jothidam" element={<PlaceholderCaseStudy title="Jothidam" />} />
-          <Route path="/case-studies/fabric-suppliers" element={<PlaceholderCaseStudy title="Fabric Suppliers" />} />
-        </Routes>
-      </Layout>
-    </Router>
+            <Route path="/case-studies/jothidam" element={<PlaceholderCaseStudy title="Jothidam" />} />
+            <Route path="/case-studies/fabric-suppliers" element={<PlaceholderCaseStudy title="Fabric Suppliers" />} />
+          </Routes>
+        </Layout>
+      </Router>
+    </ThemeProvider>
   );
 }
 

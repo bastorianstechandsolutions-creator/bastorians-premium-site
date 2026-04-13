@@ -8,7 +8,7 @@ interface GlassCardProps {
 
 export const GlassCard = ({ children, className }: GlassCardProps) => {
   return (
-    <div className={cn("glass-card p-6 md:p-8 hover:bg-white/[0.04] transition-colors duration-300", className)}>
+    <div className={cn("glass-card p-6 md:p-8 hover:bg-black/[0.05] dark:hover:bg-white/[0.04] transition-colors duration-300", className)}>
       {children}
     </div>
   );

@@ -12,20 +12,20 @@ export default function Home() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-blue/20 blur-[120px] rounded-full pointer-events-none opacity-50" />
 
         <ScrollReveal width="100%">
-          <div className="inline-block mb-6 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-sm font-medium text-white/80">
+          <div className="inline-block mb-6 px-4 py-1.5 rounded-full border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 backdrop-blur-md text-sm font-medium text-gray-700 dark:text-white/80 transition-colors duration-300">
             Elite Performance Marketing
           </div>
         </ScrollReveal>
 
         <ScrollReveal delay={0.1} width="100%">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-8 leading-[1.1]">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-8 leading-[1.1] text-gray-900 dark:text-white transition-colors duration-300">
             We Drive <span className="text-brand-blue">Pure ROI.</span><br />
             Nothing Else Matters.
           </h1>
         </ScrollReveal>
 
         <ScrollReveal delay={0.2} width="100%">
-          <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-12">
+          <p className="text-lg md:text-xl text-gray-600 dark:text-white/60 max-w-2xl mx-auto mb-12 transition-colors duration-300">
             Bastorians tech and solutions scales businesses through aggressive, data-driven Meta Ads. We strip away the noise and focus purely on your bottom line.
           </p>
         </ScrollReveal>
@@ -42,11 +42,11 @@ export default function Home() {
       </section>
 
       {/* Niches / Case Studies Grid */}
-      <section className="py-24 bg-black relative border-t border-white/5">
+      <section className="py-24 bg-background dark:bg-black relative border-t border-black/5 dark:border-white/5 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-16">
-              Proven Across <span className="text-white/40">Industries</span>
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-16 text-gray-900 dark:text-white transition-colors duration-300">
+              Proven Across <span className="text-gray-400 dark:text-white/40">Industries</span>
             </h2>
           </ScrollReveal>
 
@@ -59,10 +59,10 @@ export default function Home() {
                       <BsArrowRight className="text-2xl text-brand-blue" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold mb-3">{niche.title}</h3>
-                      <p className="text-white/60 mb-8">{niche.description}</p>
+                      <h3 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white transition-colors duration-300">{niche.title}</h3>
+                      <p className="text-gray-600 dark:text-white/60 mb-8 transition-colors duration-300">{niche.description}</p>
                     </div>
-                    <div className="inline-flex items-center px-4 py-2 rounded-lg bg-white/5 text-brand-blue font-semibold text-sm w-fit">
+                    <div className="inline-flex items-center px-4 py-2 rounded-lg bg-black/5 dark:bg-white/5 text-brand-blue font-semibold text-sm w-fit transition-colors duration-300">
                       {niche.metrics}
                     </div>
                   </GlassCard>
@@ -75,7 +75,7 @@ export default function Home() {
             <ScrollReveal delay={0.2}>
               <Link
                 to="/case-studies"
-                className="inline-flex items-center justify-center space-x-2 px-8 py-4 border border-white/10 rounded-full hover:bg-white/5 hover:border-brand-blue transition-all text-white mt-12 mx-auto"
+                className="inline-flex items-center justify-center space-x-2 px-8 py-4 border border-black/10 dark:border-white/10 rounded-full hover:bg-black/5 dark:hover:bg-white/5 hover:border-brand-blue transition-all text-gray-900 dark:text-white mt-12 mx-auto"
               >
                 <span>View All Case Studies</span>
                 <BsArrowRight />
@@ -89,19 +89,19 @@ export default function Home() {
       <section className="py-32 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollReveal width="100%">
-            <h2 className="text-4xl md:text-6xl font-bold tracking-tighter mb-8">
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tighter mb-8 text-gray-900 dark:text-white transition-colors duration-300">
               Why Bastorians?
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.1} width="100%">
-            <p className="text-xl md:text-2xl text-white/60 max-w-3xl mx-auto leading-relaxed mb-16">
+            <p className="text-xl md:text-2xl text-gray-600 dark:text-white/60 max-w-3xl mx-auto leading-relaxed mb-16 transition-colors duration-300">
               We aren't a traditional agency. We don't care about vanity metrics. We deploy capital efficiently to acquire customers and generate revenue. It's binary: we perform, or we don't.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={0.2} width="100%">
             <Link
               to="/contact"
-              className="inline-flex items-center space-x-2 px-6 py-3 border border-white/20 text-white rounded-full hover:bg-white hover:text-black transition-all text-base font-medium"
+              className="inline-flex items-center space-x-2 px-6 py-3 border border-black/20 dark:border-white/20 text-gray-900 dark:text-white rounded-full hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all text-base font-medium"
             >
               <span>Work With Us</span>
             </Link>

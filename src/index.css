@@ -6,13 +6,13 @@
 
 @layer base {
   body {
-    @apply bg-background text-white font-sans antialiased;
+    @apply bg-background text-gray-900 dark:text-white font-sans antialiased;
     overflow-x: hidden;
   }
 }
 
 @layer components {
   .glass-card {
-    @apply bg-white/[0.02] border border-white/10 backdrop-blur-md rounded-2xl;
+    @apply bg-black/[0.02] dark:bg-white/[0.02] border border-black/10 dark:border-white/10 backdrop-blur-md rounded-2xl;
   }
 }
