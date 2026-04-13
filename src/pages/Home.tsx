@@ -4,9 +4,18 @@ import { GlassCard } from '../components/GlassCard';
 import { BsArrowRight } from 'react-icons/bs';
 import { niches } from '../data/niches';
 
+const CLIENT_LOGOS = [
+  'HAIWA TV',
+  'APEX FINANCE',
+  'TITAN METALS',
+  'ELITE PHYSIO',
+  'NEXUS REALTY',
+  'ELEVATE EDTECH'
+];
+
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-hidden">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full flex flex-col items-center text-center">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-blue/20 blur-[120px] rounded-full pointer-events-none opacity-50" />
@@ -38,6 +47,34 @@ export default function Home() {
             <span>Book Your Strategy Call</span>
             <BsArrowRight />
           </Link>
+        </ScrollReveal>
+      </section>
+
+      {/* Trusted By Marquee */}
+      <section className="w-full py-10 border-y border-black/5 dark:border-white/5 bg-black/[0.01] dark:bg-white/[0.01] overflow-hidden transition-colors duration-300">
+        <ScrollReveal delay={0.4} width="100%">
+          <div className="flex w-[200%] animate-marquee">
+            <div className="flex w-1/2 justify-around items-center">
+              {CLIENT_LOGOS.map((logo, i) => (
+                <span
+                  key={`logo-1-${i}`}
+                  className="text-2xl md:text-3xl font-bold tracking-widest text-gray-400 dark:text-white/20 hover:text-gray-600 dark:hover:text-white/60 transition-colors cursor-default whitespace-nowrap mx-12 duration-300"
+                >
+                  {logo}
+                </span>
+              ))}
+            </div>
+            <div className="flex w-1/2 justify-around items-center">
+              {CLIENT_LOGOS.map((logo, i) => (
+                <span
+                  key={`logo-2-${i}`}
+                  className="text-2xl md:text-3xl font-bold tracking-widest text-gray-400 dark:text-white/20 hover:text-gray-600 dark:hover:text-white/60 transition-colors cursor-default whitespace-nowrap mx-12 duration-300"
+                >
+                  {logo}
+                </span>
+              ))}
+            </div>
+          </div>
         </ScrollReveal>
       </section>
 
