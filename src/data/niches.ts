@@ -30,10 +30,16 @@ export const niches = [
     metrics: "High Quality Leads"
   },
   {
-    title: "Event Management & EdTech",
-    description: "Maximizing enrollments and event attendance efficiently.",
-    link: "/case-studies/events-edtech",
-    metrics: "3x ROAS"
+    title: "Event Management",
+    description: "Driving mass awareness and sold-out venues for high-profile events.",
+    link: "/case-studies/event-management",
+    metrics: "3x Ticket Sales"
+  },
+  {
+    title: "EdTech",
+    description: "Scaling student enrollments and digital course purchases efficiently.",
+    link: "/case-studies/edtech",
+    metrics: "60% Lower CPL"
   },
   {
     title: "Homemade Cakes",
@@ -42,7 +48,7 @@ export const niches = [
     metrics: "Sold Out Weekly"
   },
   {
-    title: "Language Training",
+    title: "Language Training Institutes",
     description: "Dominating local search and social for student acquisition.",
     link: "/case-studies/language-training",
     metrics: "4x Enrollment Rate"

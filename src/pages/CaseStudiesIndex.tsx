@@ -23,7 +23,7 @@ export default function CaseStudiesIndex() {
 
         <ScrollReveal delay={0.2} width="100%">
           <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
-            Explore how we deploy capital efficiently to acquire customers and generate revenue across multiple industries.
+            Data-driven customer acquisition and measurable ROI across diverse industries.
           </p>
         </ScrollReveal>
       </section>

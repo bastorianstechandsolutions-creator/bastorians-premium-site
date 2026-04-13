@@ -51,7 +51,7 @@ export default function Home() {
           </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {niches.map((niche, index) => (
+            {niches.slice(0, 4).map((niche, index) => (
               <ScrollReveal key={niche.title} delay={index * 0.1} width="100%">
                 <Link to={niche.link} className="block group">
                   <GlassCard className="h-full relative overflow-hidden flex flex-col justify-between group-hover:border-brand-blue/30 transition-colors">
@@ -75,7 +75,7 @@ export default function Home() {
             <ScrollReveal delay={0.2}>
               <Link
                 to="/case-studies"
-                className="inline-flex items-center justify-center space-x-2 px-8 py-4 border border-white/10 rounded-full hover:bg-white/5 hover:border-brand-blue transition-all text-white mx-auto font-medium"
+                className="inline-flex items-center justify-center space-x-2 px-8 py-4 border border-white/10 rounded-full hover:bg-white/5 hover:border-brand-blue transition-all text-white mt-12 mx-auto"
               >
                 <span>View All Case Studies</span>
                 <BsArrowRight />
