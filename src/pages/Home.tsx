@@ -5,12 +5,13 @@ import { BsArrowRight } from 'react-icons/bs';
 import { niches } from '../data/niches';
 
 const CLIENT_LOGOS = [
-  'HAIWA TV',
-  'APEX FINANCE',
-  'TITAN METALS',
-  'ELITE PHYSIO',
-  'NEXUS REALTY',
-  'ELEVATE EDTECH'
+  '/haiwa black logo.png',
+  '/Indira Finance.png',
+  '/KINERGY LOGO.png',
+  '/yummy cakes.png',
+  '/Smart Vibes Academy.png',
+  '/Eagle Eye.png',
+  '/logo-futrnxt.png'
 ];
 
 export default function Home() {
@@ -56,22 +57,22 @@ export default function Home() {
           <div className="flex w-[200%] animate-marquee">
             <div className="flex w-1/2 justify-around items-center">
               {CLIENT_LOGOS.map((logo, i) => (
-                <span
+                <img
                   key={`logo-1-${i}`}
-                  className="text-2xl md:text-3xl font-bold tracking-widest text-gray-400 dark:text-white/20 hover:text-gray-600 dark:hover:text-white/60 transition-colors cursor-default whitespace-nowrap mx-12 duration-300"
-                >
-                  {logo}
-                </span>
+                  src={logo}
+                  alt={`Trusted Client ${i + 1}`}
+                  className="h-12 w-auto mx-12 grayscale brightness-0 dark:invert opacity-40 hover:opacity-100 transition-opacity duration-300 object-contain"
+                />
               ))}
             </div>
             <div className="flex w-1/2 justify-around items-center">
               {CLIENT_LOGOS.map((logo, i) => (
-                <span
+                <img
                   key={`logo-2-${i}`}
-                  className="text-2xl md:text-3xl font-bold tracking-widest text-gray-400 dark:text-white/20 hover:text-gray-600 dark:hover:text-white/60 transition-colors cursor-default whitespace-nowrap mx-12 duration-300"
-                >
-                  {logo}
-                </span>
+                  src={logo}
+                  alt={`Trusted Client ${i + 1}`}
+                  className="h-12 w-auto mx-12 grayscale brightness-0 dark:invert opacity-40 hover:opacity-100 transition-opacity duration-300 object-contain"
+                />
               ))}
             </div>
           </div>
