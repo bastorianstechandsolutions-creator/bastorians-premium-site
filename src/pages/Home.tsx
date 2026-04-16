@@ -5,13 +5,12 @@ import { BsArrowRight } from 'react-icons/bs';
 import { niches } from '../data/niches';
 
 const CLIENT_LOGOS = [
-  '/haiwa black logo.png',
-  '/Indira Finance.png',
-  '/KINERGY LOGO.png',
-  '/yummy cakes.png',
-  '/Smart Vibes Academy.png',
-  '/Eagle Eye.png',
-  '/logo-futrnxt.png'
+  '/Indira Finance.png', '/finoteric.png', '/City Q Gate.png', '/Profinserv.png', '/Annamalai logo.png', '/fx.png',
+  '/kinergy.png', '/yummycakes.png', '/hailmarryBuilders.png', '/logofutrnxt.png', '/haiwa black logo.png',
+  '/living space strock.png', '/Vecoon.png', '/Playdate.png', '/EagleEye.png', '/vagafc.png', '/agtgreentec.png',
+  '/sathsar.png', '/Wealthwave.png', '/Vaga.png', '/SmartVibesAcademy.png', '/EBM.png', '/Bluered.png', '/NS.png',
+  '/Kites.png', '/ThirucovaiBuilderslogo.png', '/globalkids.png', '/DoonPublicSchool.png', '/Acanthe.png',
+  '/jsrenterprises.png', '/safinance.png', '/gatedhomes.jpg', '/joefinance.png'
 ];
 
 export default function Home() {
@@ -61,7 +60,7 @@ export default function Home() {
                   key={`logo-1-${i}`}
                   src={logo}
                   alt={`Trusted Client ${i + 1}`}
-                  className="h-12 w-auto mx-12 grayscale brightness-0 dark:invert opacity-40 hover:opacity-100 transition-opacity duration-300 object-contain"
+                  className="grayscale brightness-0 dark:invert opacity-40 hover:opacity-100 transition-opacity duration-300 object-contain h-12 w-auto mx-8 shrink-0"
                 />
               ))}
             </div>
@@ -71,7 +70,7 @@ export default function Home() {
                   key={`logo-2-${i}`}
                   src={logo}
                   alt={`Trusted Client ${i + 1}`}
-                  className="h-12 w-auto mx-12 grayscale brightness-0 dark:invert opacity-40 hover:opacity-100 transition-opacity duration-300 object-contain"
+                  className="grayscale brightness-0 dark:invert opacity-40 hover:opacity-100 transition-opacity duration-300 object-contain h-12 w-auto mx-8 shrink-0"
                 />
               ))}
             </div>
